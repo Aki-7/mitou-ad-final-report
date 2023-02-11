@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 
-$latex = 'platex';
+$latex = 'platex -halt-on-error -interaction=nonstopmode';
 $bibtex = 'pbibtex';
 $dvipdf = 'dvipdfmx %O -o %D %S';
 $makeindex = 'mendex -U %O -o %D %S';

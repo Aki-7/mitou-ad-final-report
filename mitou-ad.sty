@@ -1,0 +1,51 @@
+\usepackage{setspace}
+
+\def\innovatorA#1{\gdef\@innovatorA{#1}}
+\def\innovatorB#1{\gdef\@innovatorB{#1}}
+\def\innovatorC#1{\gdef\@innovatorC{#1}}
+\def\innovatorD#1{\gdef\@innovatorD{#1}}
+\def\projectmanager#1{\gdef\@projectmanager{#1}}
+
+\renewcommand{\@maketitle}{%
+\begin{titlepage}%
+  \let\footnotesize\small
+  \let\footnoterule\relax
+  \let\footnote\thanks
+  \null\vfil
+  \vskip 8em
+  \begin{center}%
+    \begin{spacing}{1.2}
+      {\huge%
+        \the\numexpr\year-1 年度未踏アドバンスト事業 \par%
+        （\@title） \par%
+        成果報告書 \par%
+      }%
+    \end{spacing}
+    \vskip 12em%
+    {\LARGE
+      \begin{tabular}[t]{p{40mm}rl}%
+        イノベータ  & : & \@innovatorA \\
+                  &   & \@innovatorB \\
+                  &   & \@innovatorC \\
+                  &   & \@innovatorD \\
+        担当PM     & : & \@projectmanager \\
+      \end{tabular} \par%
+    }%
+    \vskip 12em
+    {\LARGE \@date \par}%
+  \end{center}%
+  \par
+  \@thanks\vfil\null
+\end{titlepage}%
+\setcounter{footnote}{0}%
+\global\let\thanks\relax
+\global\let\maketitle\relax
+\global\let\@thanks\@empty
+\global\let\@author\@empty
+\global\let\@date\@empty
+\global\let\@title\@empty
+\global\let\title\relax
+\global\let\author\relax
+\global\let\date\relax
+\global\let\and\relax
+}%
