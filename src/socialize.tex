@@ -2,8 +2,91 @@
 
 \subsection{OSSプロジェクトとしての体裁整備}
 
+信頼できるOSSプロジェクトとしてZwinを公開するため，OSSプロジェクトとして整えるべき
+ドキュメントなどの体裁を準備した．
+これにあたっては，GitHubが提供する"Open Source Guide"
+\footnote{GitHub. "Open Source Guide" \url{https://opensource.guide/} (accessed on 12 Feb, 2023)}
+と，イノベータの木内が関わっていたOSS（
+Jenkins\footnote{Jenkins, \url{https://www.jenkins.io/} (accessed on 12 Feb, 2023)}
+）のコミュニティづくりを参考にした．
+
+具体的にはまず，一般的な人々に向けてプロジェクトの認知度を高めるために，
+Webサイト（\url{https://zwin.dev}）を公開し，プロジェクトのビジョンやロードマップ，
+各種コンセプトの解説，各種SNSへのリンクなどを作成した．
+また，TwitterやDiscordといった一般的な窓口となるSNSを整備した．
+未踏アドバンスト事業期間でDiscordの参加者は36人から115人に増え，
+セットアップに関する議論や，機能や方向性に関する議論ができた．
+新規開設したTwitterアカウントでは256人のフォロワーを獲得した．
+
+ユーザや業界に向けては，ZwinのWebサイトでインストレーションガイドを提供したり，
+ライセンスやCode of Conductの提示，などを行った．
+
+コントリビュータに向けてはIssueやPull Requestのテンプレート作成，CIによるビルドテストの自動化，
+開発者ドキュメントの整備などを行った．
+また開発者ドキュメントに従って，開発者用のビルドを実際に体験してもらう体験会を開き，
+開発者ドキュメントに対する改善点などを洗い出した．
+実績としてイノベータと全く関わりのない外部の方からIssueやPull Requestの形で
+コントリビュートしていただくことができた．
+さらに海外の方からもプロジェクトに参加したいとの連絡を受けて，参画していただく予定である．
+
+% Issue や PR をもらったのはここ
+% Dev Docの体験はここ
+% Discordなどでの議論はここ
+% コントリビューションしたい人が現れた
+
 \subsection{ファーストリリース}
+
+2023年1月16日にZwinのベータリリースを行い，
+プロジェクト外部のユーザが気軽に試せる環境を整え公開した公開した．
+今回のリリースではユーザの手元でビルドしてもらう必要があったため，
+ビルドとインストールを自動化し，今後のアップデートが簡単に行えるようになる
+スクリプトを用意した．
+Webサイトにはインストールの手順や，一連の機能や使い方を説明したウォークスルーを
+動画形式とドキュメント形式の両方で準備した．
+またReddit\footnote{Reddit \url{https://www.reddit.com/} (accessed on 12 Feb, 2023)}
+やHacker News\footnote{Hacker News \url{https://news.ycombinator.com/} (accessed on 12 Feb, 2023)}
+にてリリースのPRを行った．
+
+特にTwitterでは多くの反応をもらい，実際にインストールして使ったユーザからの
+意見を見ることもできた．以下はTwitterでの反応の一例である．
+
+\begin{itemize}
+  \item ``zwin これ皆が夢見たVR-OSなのでは？''
+  \item ``神!?PICO4で使えたら超最強''
+  \item ``Very interesting to see these kinds of proof-of-concepts merging classical 2D desktops and \#VR. Using the mouse to interact in 3D seems like a neat thing to try. Plus, it's \#opensource!''
+\end{itemize}
+
+また，海外YouTuberに他の類似プロジェクト共に取り上げていただいたり
+\footnote{Brodie Robertson. "Linux's Odd World Of Virtual Reality Window Managers" \url{https://youtu.be/ai3BCIFy9n0} (accessed on 12 Feb, 2023)}，
+LinuxとXRとを掛け合わせた領域の多くのOSSプロジェクトでZwinの話題が上がるなど，
+OSSコミュニティでの認知度を高めていくことができた．
+
+% Twitterでの反応はここ
+% 使用フローを説明する動画の作成 etc...
+% インストールガイドの作成 & 自分でインストールしてくれた人がいた
+% Youtubeに載せてもらった
+% 他のLinux x VRのDiscordでも話題に上がった
 
 \subsection{商標登録の出願}
 
+本プロジェクトは当初「ZIGEN」という名前を使っていたが，ビジネスアドバイザーの方と相談したのち，
+商標の観点からより安全な名前を選択することとなり，「Zwin」に名称を変更した．
+これに伴い，各種ドキュメントやSNSで用いていた名称の変更や，コード内のプレフィックスの変更などの
+対応をした．
+また，2月○日に商標登録を出願した．
+
+% BAと相談した話
+% 名前を変更し，コードや各種SNSの名称変更を行った．
+% 商標登録の出願を行った（やる）
+
 \subsection{寄付の募集}
+
+リリース後，ユーザから寄付の申し出をうけた．事業を継続的に進め，またユーザからのニーズの度合いを
+測る1つの手段として寄付を受けることにし，寄付ページの作成，口座の登録，
+寄付に対するリターンの設定をした．
+この結果窓口設置から2週間で月額と単発を含む3件の寄付を受けることができた．
+
+% 継続的な開発のため & ユーザに価値が届けられている度合いの指標
+% 二週間で3人 (月額と単発両方)
+% 口座の登録・寄付に対するリターンの設定、寄付ページの制作を行った
+% Donationの話はすること少ないな。
