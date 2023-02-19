@@ -11,24 +11,10 @@ IDCの2022年3月のレポート~\cite{idc}によると，世界のAR/VRヘッ�
 5000万台を超えると予想されている（図\ref{fig:idc}）．
 
 \begin{figure}[htbp]
-  \begin{minipage}[b]{0.50\linewidth}
-    \centering
-    \includegraphics[keepaspectratio, width=0.9\linewidth]{fig/idc.png}
-    \caption{IDCによる世界のAR/VRヘッドセットの市場予測}
-    \label{fig:idc}
-  \end{minipage}
-  % \begin{minipage}[b]{0.50\linewidth}
-  %   \centering
-  %   \includegraphics[keepaspectratio, width=0.9\linewidth]{fig/workrooms.jpeg}
-  %   \caption{Horizon Workrooms (Meta社)}
-  %   \label{fig:workrooms}
-  % \end{minipage}
-  \begin{minipage}[t]{0.50\linewidth}
-    \centering
-    \includegraphics[keepaspectratio, width=\linewidth]{fig/2d-windowing-system.png}
-    \caption{2D Windowing Systemの概要図}
-    \label{fig:2d-windowing-system}
-  \end{minipage}
+  \centering
+  \includegraphics[keepaspectratio, width=0.7\linewidth]{fig/idc.png}
+  \caption{IDCによる世界のAR/VRヘッドセットの市場予測}
+  \label{fig:idc}
 \end{figure}
 
 
@@ -67,21 +53,10 @@ Windowing Systemではアプリケーションが直接自身の描画内容を�
 アプリケーションを操作したりでき，マルチアプリケーション・マルチタスクの環境が実現されている．
 
 \begin{figure}[htbp]
-  \begin{minipage}[t]{0.50\linewidth}
-    \centering
-    \includegraphics[keepaspectratio, width=0.9\linewidth]{fig/xr-app-switch.png}
-    \caption{
-      現状のXRアプリケーションの切り替え．アプリケーションの切り替えは，空間内の全ての
-      機能を切り替えることになってしまう．
-    }
-    \label{fig:xr-app-switch}
-  \end{minipage}
-  \begin{minipage}[t]{0.50\linewidth}
-    \centering
-    \includegraphics[keepaspectratio, width=\linewidth]{fig/xr-app-install.png}
-    \caption{XR空間でユーザが好きなアプリケーションをインストールして同時に複数使う．}
-    \label{fig:xr-app-install}
-  \end{minipage}
+  \centering
+  \includegraphics[keepaspectratio, width=0.7\linewidth]{fig/2d-windowing-system.png}
+  \caption{2D Windowing Systemの概要図}
+  \label{fig:2d-windowing-system}
 \end{figure}
 
 \subsubsection{現状のXRアプリケーションについて}
@@ -107,6 +82,17 @@ Windowing Systemではアプリケーションが直接自身の描画内容を�
 % としての機能を実装することもないと考えられるため，XR会議をしながらCTスキャンの結果を
 % 見るという世界が実現する可能性は低い．
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[keepaspectratio, width=0.7\linewidth]{fig/xr-app-switch.png}
+  \caption{
+    現状のXRアプリケーションの切り替え．アプリケーションの切り替えは，空間内の全ての
+    機能を切り替えることになってしまう．
+  }
+  \label{fig:xr-app-switch}
+\end{figure}
+
+
 \subsubsection{何が必要か}
 
 特に作業空間や日常生活のサポートとしてのXRでは，全ての機能を1つのアプリケーションが実装するのではなく，
@@ -119,6 +105,14 @@ Windowing Systemではアプリケーションが直接自身の描画内容を�
 利用することで作業空間を作り上げていくことは，2Dのデスクトップ環境では当然のように
 行われていることだが，XRの作業空間では達成できていない．
 XRにもこのようなマルチアプリケーション・マルチタスクの作業環境が求められる．
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[keepaspectratio, width=0.7\linewidth]{fig/xr-app-install.png}
+  \caption{XR空間でユーザが好きなアプリケーションをインストールして同時に複数使う．}
+  \label{fig:xr-app-install}
+\end{figure}
+
 
 \subsection{未踏アドバンスト事業実施以前の状況}
 \label{section:current-status}
@@ -243,7 +237,7 @@ XR空間にマルチアプリケーション・マルチタスクの環境を提
 % textlint-disable
 において，メインのコンセプトについて概念実証を行ってきが，これをさらに社会へ実装するため，
 % textlint-enable
-未踏アドバンストでは以下のより詳細な目的を設定した．
+未踏アドバンスト事業では以下のより詳細な目的を設定した．
 
 \begin{enumerate}
   \item \textbf{実用レベルのXRデスクトップ環境を提供する．}\\

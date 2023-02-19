@@ -5,47 +5,52 @@
 \def\innovatorC#1{\gdef\@innovatorC{#1}}
 \def\innovatorD#1{\gdef\@innovatorD{#1}}
 \def\projectmanager#1{\gdef\@projectmanager{#1}}
+\def\assetnumber#1{\gdef\@assetnumber{#1}}
 
 \renewcommand{\@maketitle}{%
-\begin{titlepage}%
-  \let\footnotesize\small
-  \let\footnoterule\relax
-  \let\footnote\thanks
-  \null\vfil
-  \vskip 8em
-  \begin{center}%
-    \begin{spacing}{1.2}
-      {\huge%
-        \the\numexpr\year-1 年度未踏アドバンスト事業 \par%
-        （\@title） \par%
-        成果報告書 \par%
-      }%
-    \end{spacing}
-    \vskip 12em%
-    {\LARGE
-      \begin{tabular}[t]{p{40mm}rl}%
-        イノベータ  & : & \@innovatorA \\
-                  &   & \@innovatorB \\
-                  &   & \@innovatorC \\
-                  &   & \@innovatorD \\
-        担当PM     & : & \@projectmanager \\
-      \end{tabular} \par%
-    }%
-    \vskip 12em
-    {\LARGE \@date \par}%
-  \end{center}%
-  \par
-  \@thanks\vfil\null
-\end{titlepage}%
-\setcounter{footnote}{0}%
-\global\let\thanks\relax
-\global\let\maketitle\relax
-\global\let\@thanks\@empty
-\global\let\@author\@empty
-\global\let\@date\@empty
-\global\let\@title\@empty
-\global\let\title\relax
-\global\let\author\relax
-\global\let\date\relax
-\global\let\and\relax
+  \newgeometry{top=2cm}
+  \begin{titlepage}%
+    \let\footnotesize\small
+    \let\footnoterule\relax
+    \let\footnote\thanks
+    % \rightline{20**情財第****号}
+    \rightline{\the\numexpr\year-1 情財第 \@assetnumber 号}
+    \null\vfil
+    \vskip 8em
+    \begin{center}%
+      \begin{spacing}{1.2}
+        {\huge%
+          \the\numexpr\year-1 年度未踏アドバンスト事業 \par%
+          （\@title） \par%
+          成果報告書 \par%
+        }%
+      \end{spacing}
+      \vskip 12em%
+        {\LARGE
+          \begin{tabular}[t]{p{40mm}rl}%
+            イノベータ & : & \@innovatorA     \\
+                       &   & \@innovatorB     \\
+                       &   & \@innovatorC     \\
+                       &   & \@innovatorD     \\
+            担当PM     & : & \@projectmanager \\
+          \end{tabular} \par%
+        }%
+      \vskip 12em
+        {\LARGE \@date \par}%
+    \end{center}%
+    \par
+    \@thanks\vfil\null
+  \end{titlepage}%
+  \restoregeometry
+  \setcounter{footnote}{0}%
+  \global\let\thanks\relax
+  \global\let\maketitle\relax
+  \global\let\@thanks\@empty
+  \global\let\@author\@empty
+  \global\let\@date\@empty
+  \global\let\@title\@empty
+  \global\let\title\relax
+  \global\let\author\relax
+  \global\let\date\relax
+  \global\let\and\relax
 }%
